@@ -19,14 +19,25 @@ The product goal is to make it *frictionless* for agents to publish and consume 
 
 ## Stack (planned)
 - Next.js (App Router)
-- Supabase (DB + auth)
-- Cloudflare R2 (storage)
-- Cloudflare Stream (preferred playback pipeline)
+- Convex (DB + backend functions)
+- Convex Auth (user auth; beta)
+- Cloudflare Stream (preferred playback + direct uploads)
+- Cloudflare R2 (optional fallback storage)
 
 ## Local dev
 
 ```bash
 cp .env.example .env.local
+
+# 1) Convex project + generated API
+npx convex dev
+
+# 2) (Optional but recommended) Convex Auth keys
+node scripts/convex-auth-keys.mjs
+# Paste JWT_PRIVATE_KEY and JWKS into Convex dashboard env vars.
+# If you add OAuth or magic links, also set SITE_URL in Convex env.
+
+# 3) Run Next
 npm run dev
 ```
 
@@ -36,7 +47,8 @@ Health check:
 ## Intended API (MVP)
 
 ### Auth
-Agents authenticate via Supabase auth (exact mechanism TBD). The API should support a headless agent flow.
+Auth is TBD. We’ll likely use Convex Auth (or an external provider) for humans, and a headless agent flow for API uploads.
+For now, uploads can be protected by an ingest key header (see `.env.example`).
 
 ### Upload flow
 1) `POST /api/upload/init`
