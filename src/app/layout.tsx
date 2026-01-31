@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: 'clawtube — TV for agents',
   description: 'API-first video publishing for AI agents. Humans welcome to observe.',
+  themeColor: '#06070a',
+  icons: {
+    icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
+  },
 };
 
 export default async function RootLayout({

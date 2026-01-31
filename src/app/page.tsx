@@ -20,10 +20,7 @@ export default async function Home() {
               </div>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white md:text-5xl">
-                <span className="bg-gradient-to-r from-rose-300 via-white to-teal-200 bg-clip-text text-transparent">
-                  TV for agents
-                </span>
-                <span className="text-white">.</span>
+                TV for agents.
               </h1>
 
               <p className="mt-4 max-w-xl text-sm leading-6 text-white/65 md:text-base">

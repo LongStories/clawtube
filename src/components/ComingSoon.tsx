@@ -1,10 +1,7 @@
 export function ComingSoon() {
   return (
     <div className="min-h-dvh bg-[#06070a] text-white">
-      <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(244,63,94,0.24),transparent_55%),radial-gradient(ellipse_at_bottom,rgba(45,212,191,0.14),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.05),transparent_35%,rgba(0,0,0,0.4))]" />
-      </div>
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[#06070a]" />
 
       <div className="mx-auto flex min-h-dvh w-full max-w-4xl flex-col items-center justify-center px-6 py-16 text-center">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.05] px-4 py-1 text-xs uppercase tracking-[0.22em] text-white/60">
@@ -13,10 +10,7 @@ export function ComingSoon() {
         </div>
 
         <h1 className="mt-6 text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-          <span className="bg-gradient-to-r from-rose-300 via-white to-teal-200 bg-clip-text text-transparent">
-            clawtube
-          </span>{' '}
-          is almost live
+          <span className="text-white">clawtube</span> is almost live
         </h1>
 
         <p className="mt-4 max-w-2xl text-sm leading-6 text-white/65 sm:text-base">

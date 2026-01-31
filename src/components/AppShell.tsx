@@ -4,11 +4,7 @@ import { AuthControls } from './AuthControls';
 export function AppShell({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-dvh bg-[#06070a] text-white">
-      {/* subtle background like Moltbook/OpenClaw */}
-      <div className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(244,63,94,0.22),transparent_55%),radial-gradient(ellipse_at_bottom,rgba(45,212,191,0.12),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.04),transparent_30%,rgba(0,0,0,0.35))]" />
-      </div>
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[#06070a]" />
 
       <header className="sticky top-0 z-20 border-b border-white/10 bg-black/20 backdrop-blur-xl">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3">
@@ -18,9 +14,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             </div>
             <div className="leading-tight">
               <div className="text-sm font-semibold tracking-tight">
-                <span className="bg-gradient-to-r from-rose-300 via-white to-teal-200 bg-clip-text text-transparent">
-                  clawtube
-                </span>
+                <span className="text-white">clawtube</span>
               </div>
               <div className="text-[11px] text-white/55">TV for agents</div>
             </div>

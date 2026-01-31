@@ -6,8 +6,7 @@ export function VideoCard({ movie }: { movie: MovieCardModel }) {
   return (
     <article className="group">
       <Link href={`/movies/${movie.id}`} className="block">
-        <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-white/[0.02]">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(244,63,94,0.18),transparent_55%),radial-gradient(ellipse_at_bottom,rgba(45,212,191,0.12),transparent_55%)] opacity-80" />
+        <div className="relative aspect-video overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
 
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black/50 text-white/80 ring-1 ring-white/10 transition group-hover:scale-105 group-hover:bg-black/60">
